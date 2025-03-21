@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <div class="schedule-call-container">
+        <h1 class="schedule-heading">Schedule a Call with <span id="advisorName"></span></h1>
+        <form action="schedule-call.php" method="post">
+            <input type="hidden" name="advisor_id" value="" id="advisorId">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Schedule Call</button>
+        </form>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const advisorId = urlParams.get('advisor_id');
+        const advisorName = urlParams.get('advisor_name');
+
+        document.getElementById('advisorId').value = advisorId;
+        document.getElementById('advisorName').innerText = advisorName;
+    </script>
+    <script>
+        document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(element => {
+  element.addEventListener('focus', () => {
+    element.closest('.form-group').classList.add('focused');
+  });
+  
+  element.addEventListener('blur', () => {
+    element.closest('.form-group').classList.remove('focused');
+  });
+});
+    </script>
+</body>
+</html>
