@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleKar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="ScaleKar Logo" class="logo-img">
+                </div>
+                <nav>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="seek-advice.html">Seek Advice</a></li>
+                        <li><a href="http://localhost:3001/">News/Articles</a></li>
+                        <li><a href="social_media/index.html" class="btn-primary">Chat Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="voice-assistant">
+            <button id="mic-button" class="mic-button">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <div class="voice-panel" id="voice-panel">
+                <div class="voice-panel-header">
+                    <h3>Voice Assistant</h3>
+                    <button id="close-panel" class="close-panel">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="voice-status">
+                    <div id="voice-status-indicator" class="voice-status-indicator"></div>
+                    <p id="voice-status-text">Click the mic to start</p>
+                </div>
+                <div class="voice-commands">
+                    <h4>Available Commands:</h4>
+                    <ul>
+                        <li>"Go to home" - Navigate to homepage</li>
+                        <li>"Go to articles" - Browse news and articles</li>
+                        <li>"Seek advice" - Go to the advice section</li>
+                        <li>"Open chat" - Open the chat interface</li>
+                        <li>"Scroll down" - Scroll down the page</li>
+                        <li>"Scroll up" - Scroll up the page</li>
+                        <li>"Go back" - Return to previous page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Grow Your Business With Expert Advice</h1>
+                <p>Connect with industry professionals and scale your business to new heights</p>
+                <a href="#" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Discover how we can help you scale your business</p>
+            </div>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/advice.jpg" alt="Seek Advice">
+                        <div class="card-overlay">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Seek Advice</h3>
+                        <p>Get personalized guidance from our experts to overcome business challenges</p>
+                        <a href="seek-advice.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/expert.jpg" alt="Seek Advice">
+                        <div class="card-overlay">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Join as an advisor</h3>
+                        <p>Become an expert at ScaleKar to guide upcoming businesses</p>
+                        <a href="register.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/news.jpg" alt="News and Articles">
+                        <div class="card-overlay">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>News/Articles</h3>
+                        <p>Stay updated with the latest industry trends, insights, and success stories</p>
+                        <a href="http://localhost:3001/" class="card-link">Browse Articles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/chat.jpg" alt="Chat">
+                        <div class="card-overlay">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chat Box</h3>
+                        <p>Connect with other users & build a community</p>
+                        <a href="social_media/index.html" class="card-link">Start Chatting <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="ScaleKar Logo" class="logo-img">
+                    <p>Helping businesses scale effectively since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ScaleKar. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

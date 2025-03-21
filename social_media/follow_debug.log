@@ -1,0 +1,45 @@
+2025-03-19 08:15:50 - Request received
+2025-03-19 08:15:50 - POST data: Array
+(
+    [user_id] => 1
+)
+
+2025-03-19 08:15:50 - Current user: aman garg
+2025-03-19 08:15:50 - Follower ID: 2, Followed ID: 1
+2025-03-19 08:15:50 - Success: following=true, count=1
+2025-03-19 20:35:12 - Request received
+2025-03-19 20:35:12 - POST data: Array
+(
+    [user_id] => 1
+)
+
+2025-03-19 20:35:12 - Current user: aman garg
+2025-03-19 20:35:12 - Follower ID: 2, Followed ID: 1
+2025-03-19 20:35:12 - Success: following=false, count=0
+2025-03-19 20:35:19 - Request received
+2025-03-19 20:35:19 - POST data: Array
+(
+    [user_id] => 1
+)
+
+2025-03-19 20:35:19 - Current user: aman garg
+2025-03-19 20:35:19 - Follower ID: 2, Followed ID: 1
+2025-03-19 20:35:19 - Success: following=true, count=1
+2025-03-21 08:37:42 - Request received
+2025-03-21 08:37:42 - POST data: Array
+(
+    [user_id] => 1
+)
+
+2025-03-21 08:37:42 - Current user: a
+2025-03-21 08:37:42 - Follower ID: 3, Followed ID: 1
+2025-03-21 08:37:42 - Success: following=true, count=2
+2025-03-21 08:37:44 - Request received
+2025-03-21 08:37:44 - POST data: Array
+(
+    [user_id] => 2
+)
+
+2025-03-21 08:37:44 - Current user: a
+2025-03-21 08:37:44 - Follower ID: 3, Followed ID: 2
+2025-03-21 08:37:44 - Success: following=true, count=1
